@@ -1,0 +1,32 @@
+name: PonyMagic
+description: 为小马跳跃实现一些小功能
+website:: https://github.com/BestAtuer
+author: Atuer
+version: 1.0
+
+main: ponymagic.Main
+
+commands:
+  fly:
+    description: 开启或关闭飞行
+    permission: PonyMagic.fly
+    usage: /<command>
+      
+  lobby:
+    description: 返回大厅
+    permission: PonyMagic.wtp
+    usage: /<command>
+      
+  PlotWorld:
+    description: 前往地皮世界
+    permission: PonyMagic.wtp
+    usage: /<command>
+      
+permissions:
+  PonyMagic.fly:
+    description: 允许玩家飞行
+    default: op
+
+  PonyMagic.wtp:
+    description: 允许玩家进行世界切换
+    default: true
